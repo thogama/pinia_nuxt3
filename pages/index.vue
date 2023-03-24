@@ -1,7 +1,5 @@
 <template>
-    <div>
-        first
-    </div>
+    <Counter/>
 </template>
 
 <script setup lang="ts">
