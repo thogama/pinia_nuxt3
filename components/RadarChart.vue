@@ -1,5 +1,7 @@
 <template>
-    <Radar :data="chartConfig" :options="options" />
+    <div class="col">
+        <Radar :data="chartConfig" :options="options" />
+    </div>
 </template>
   
 <script setup lang="ts">
@@ -23,33 +25,53 @@ ChartJS.register(
     Tooltip,
     Legend
 )
+
 const chartConfig = {
     labels: [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
+        "HP",
+        "INT",
+        "ATK",
+        "DEF",
+        "MP"
 
     ],
     datasets: [
         {
-            label: 'Atributos',
-            data: [60, 25, 90, 60, 60],
+            label: 'Now',
+            data: [25, 35, 50, 100, 10],
             fill: true,
-            backgroundColor: 'orange',
-            borderColor: 'rgb(54, 162, 235)',
+            borderColor: '#4300FF',
             pointBackgroundColor: 'rgb(54, 162, 235)',
             pointBorderColor: '#fff',
             pointHoverBackgroundColor: '#fff',
             pointHoverBorderColor: 'rgb(54, 162, 235)',
+            pointRadius: 0,
             elements: {
                 point: {
-                    pointStyle: "triangle"
+                    pointStyle: "circle"
                 }
             }
 
-        }
+        },
+        {
+            label: 'Then',
+            data: [35, 35, 80, 25, 40],
+            fill: true,
+            borderColor: 'green',
+            pointBackgroundColor: 'rgb(54, 162, 235)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(54, 162, 235)',
+            pointRadius: 0,
+            elements: {
+                point: {
+                    pointStyle: "circle"
+                }
+            }
+
+        },
+
+
     ]
 }
 
@@ -61,8 +83,22 @@ const options = {
                 display: false
             },
             pointLabels: {
-                color: 'red'
-            }
+                color: 'red',
+            },
+            angleLines: {
+                color: 'tomato',
+                lineWidth: 3,
+
+            },
+            grid: {
+                lineWidth: 3,
+
+
+            },
+            suggestedMin: 0,
+            suggestedMax: 100
+
+
         }
     },
 }
