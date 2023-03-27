@@ -1,7 +1,6 @@
 <template>
     <k-container>
-        <k-element class="kinesis" ref="element">
-
+        <k-element class="kinesis">
             <div class="text-center  bg-secondary  p-2 rounded">
                 <div class="row row-cols-1 row-cols-lg-2 align-items-center  p-0">
                     <div class="col">
@@ -25,34 +24,11 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
-
-
                 </div>
             </div>
         </k-element>
     </k-container>
-    <!-- <div class="fs-5 col special">
-                    {{ title }}
-                </div>
-                <div v-if="statValue! <= 0" class="col text-danger fs-5">
-                    {{ statType }} {{ statValue }}
-                </div>
-                <div v-else class="col text-success fs-5">
-                    {{ statType }} +{{ statValue }}
-                </div>
-
-                <div class="my-2 col">
-                    {{ price }} Coins
-                </div>
-                <div class="col-12">
-                    <div class="btn btn-warning">
-                        Add to Cart
-                    </div>
-                </div> -->
 </template>
 
 <script setup lang="ts">

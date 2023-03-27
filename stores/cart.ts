@@ -32,19 +32,30 @@ export const cartStore = defineStore('cart', {
     }),
     actions: {
         add(item: Item) {
-            this.items.push(item)
+            let itemOnCart = (this.items.find((element) => {
+                return element.name === item.name && element.price === item.price
+            }))
+
+            if (itemOnCart) {
+                itemOnCart.quantity += 1
+            }
+            else {
+                this.items.push(item)
+            }
+
             this.quantity = finalQuanity(this.items)
             this.total = finalPrice(this.items)
-            console.log(this.total)
+
+            console.log("teste", this.quantity,this.total)
+
         },
         remove(item: Item) {
             let removed = this.items.find(element => element.name === item.name)
             if (removed) {
-                removed.quantity = 0
+                removed.quantity -= -1
                 this.quantity = finalQuanity(this.items)
                 this.total = finalPrice(this.items)
             }
-            console.log(this.total)
         }
     },
 })
