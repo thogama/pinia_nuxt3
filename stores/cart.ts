@@ -46,12 +46,10 @@ export const cartStore = defineStore('cart', {
             this.quantity = finalQuanity(this.items)
             this.total = finalPrice(this.items)
 
-            console.log("teste", this.quantity,this.total)
-
         },
         remove(item: Item) {
             let removed = this.items.find(element => element.name === item.name)
-            if (removed) {
+            if (removed && removed.quantity > 0) {
                 removed.quantity -= -1
                 this.quantity = finalQuanity(this.items)
                 this.total = finalPrice(this.items)

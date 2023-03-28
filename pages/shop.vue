@@ -34,6 +34,7 @@
 </template>
 
 <script setup lang="ts">
+
 let itemsInStore = useCart()
 
 let trigger = ref(false)
