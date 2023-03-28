@@ -2,7 +2,7 @@
     <div style="min-height: 100vh;" class="">
         <div
             class="bg-primary text-warning d-flex flex-row-reverse align-items-center justify-content-between special p-3 sticky-top ">
-            <NuxtLink to="/shop" class="btn btn-outline-warning  position-relative">
+            <NuxtLink to="/" class="btn btn-outline-warning  position-relative">
                 <Icon class="fs-1 rounded" name="ph:arrow-fat-line-left-fill" />
             </NuxtLink>
             <div class="my-3 fs-2">

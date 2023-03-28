@@ -4,7 +4,7 @@
             <div class="text-center  bg-secondary  p-2 rounded">
                 <div class="row row-cols-1 row-cols-lg-2 align-items-center  p-0">
                     <div class="col">
-                        <img class="h-75 img-fluid border-4 border-warning border" :src="'/_nuxt/assets/' + src" />
+                        <img class="h-75 img-fluid border-4 border-warning border" :src="'/' + src" />
                     </div>
                     <div class="col fs-4">
                         <div class="  text-warning">
@@ -33,10 +33,6 @@
 
 <script setup lang="ts">
 import Item from '~~/interfaces/Item';
-
-
-
-
 
 let props = defineProps({
     title: String,

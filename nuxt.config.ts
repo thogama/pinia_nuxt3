@@ -3,5 +3,8 @@ export default defineNuxtConfig({
     ssr: false,
     modules: ["@pinia/nuxt","nuxt-icon"],
     css: ["~~/sass/main.scss"],
+    nitro: {
+        preset: "firebase"
+    }
 
 })

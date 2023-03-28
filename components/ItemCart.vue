@@ -4,7 +4,7 @@
             <div class="text-center  bg-secondary  p-2 rounded">
                 <div class="row align-items-center  p-0">
                     <div class="col">
-                        <img class="h-75 img-fluid border-4 border-warning border" :src="'/_nuxt/assets/' + imgSrc" />
+                        <img class="h-75 img-fluid border-4 border-warning border" :src="'/' + imgSrc" />
 
                     </div>
                     <div class="col">
