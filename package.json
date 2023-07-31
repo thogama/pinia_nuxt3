@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "@types/node": "^18.17.1",
+    "nuxt": "^3.6.5"
+  },
+  "dependencies": {
+    "@morev/vue-transitions": "^2.3.6",
+    "@pinia/nuxt": "^0.4.11",
+    "bootstrap": "^5.3.1",
+    "firebase-admin": "^11.10.1",
+    "firebase-functions": "^4.4.1",
+    "nuxt-icon": "^0.4.2",
+    "sass": "^1.64.1",
+    "sass-loader": "^13.3.2",
+    "vue-kinesis": "^2.0.5"
+  }
+}
